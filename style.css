@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  gap: 2rem;
+  border: none;
+  outline: none;
+  font-family: 'Urbanist', sans-serif;
+  transition: all;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  color: aliceblue;
+  background: linear-gradient(to right, rgb(52, 52, 52) ,rgb(37, 37, 37));
+}
+
+header {
+  margin-top: 5px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 1rem 0 1rem;
+  background-color: transparent;
+  filter: drop-shadow(10px);
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.logo{
+  font-size:4rem;
+  color: #d3b2a6;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.5s ease;
+  margin: 20px;
+}
+
+.logo:hover{
+  transform: scale(1.07);
+}
+
+nav{
+  display: flex;
+}
+
+nav a{
+  font-size: 3rem;
+  color: rgb(201, 159, 145);
+  margin-left: 1rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 2px solid transparent;
+  
+}
+
+
+
+@media screen and (max-width: 995px){
+  nav a{
+    position: absolute;
+    display: grid;
+    top: 0;
+    right: 0;
+    width: 40%;
+    background-color: #353535;
+    padding: 1rem solid;
+    border-bottom: 3px solid #353535;
+    border-left: 3px solid #353535;
+    border-bottom-left-radius: 2rem;
+    border-top: 0.1rem solid #353535;
+
+  }
+}
+
+nav.active{
+  display: block;
+}
+
+nav a{
+  display: block;
+  font-size: 2rem;
+  margin: 3rem 0;
+}
+nav a:hover{
+  color: #ff7f50;
+  border-bottom: 2px solid #ff7f50;
+}
+
+
+section{
+  min-height: 90vh;
+  padding: 5rem 9% 5rem 9%;
+}
+
+.social{
+  min-height: 20px;
+  min-width: 25px;
+  gap: 61rem;
+  display:flex;
+  flex-direction: row;
+  margin: 7rem;
+  filter: blur(0.5px) brightness(0.6) saturate(0.6) ;
+}
+
+.social a:hover{
+  filter: blur(0px) brightness(1.01) saturate(1);
+  box-shadow: #767676 0 0 20px 15px;
+  transition: 0.3s ease;
+}
+
+p{
+  font-size: 2.5rem;
+  line-height: 1.6;
+  margin-top: 2rem;
+  color: #d3b2a6;
+}
+
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  padding: 4px 7rem;
+}
+
+.home .home-content h1{
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+span{
+  color: #ff7f50;
+}
+
+.home .home-content h3{
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.home-img img{
+  position: relative;
+  width: 26vw;
+  box-shadow: 0 0 20px 10px #282828;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.home-img img:hover{
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.typing-text{
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+}
+
+.typing-text span{
+  position: relative;
+
+}
+
+.typing-text span::before{
+  content: 'Designer';
+  color: #736d6d;
+  animation: words 10s infinite;
+}
+
+.typing-text span::after{
+  content: '';
+  background-color: transparent;
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid #353535;
+  right: -8;
+  animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor{
+  to{
+    border-left: 3px solid #515151;
+  }
+}
+
+
+@keyframes words{
+  0%, 30%{
+    content: 'a Film Maker';
+  }
+  31%, 60%{
+    content: 'an Artist';
+  }
+  61%, 100%{
+    content: 'an Aspiring Architect';
+  }
+}
+
+@media (max-width: 1000px){
+  .home{
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 995px){
+  .home{
+    flex-direction: column;
+    gap: 5rem 4rem;
+  }
+
+  .home .home-content h1{
+    font-size: 5rem;
+  }
+
+  .home .home-content h3{
+    font-size: 2.5rem;
+  }
+
+  .home-img img{
+    width: 70vw;
+    margin-top: 4rem;
+  }
+}
+
+
+
+
+
+.container {
+  display: flex;
+  padding: 7rem;
+  gap: 1.5rem;
+  /* flex-basis: 30%; */
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+
+img{
+  width: 100%;
+  height: 100%;
+
+}
+
+.container-row{
+  display: flex;
+  
+}
+
+.phtg{
+  background: url("grid1.jpg");
+  width: 35vw;
+  display: flex;
+  font-size: medium;
+  font-weight: 1000;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  filter: blur(0.5px) brightness(0.6) saturate(0.6) ;
+  box-shadow: #515151 0 0 20px 10px;
+  
+}
+
+.sktch{
+  background: url("grid2.jpg");
+  width: 20vw;
+  height: 40vh;
+  font-size: medium;
+  font-weight: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: blur(0.5px) brightness(0.6) saturate(0.6) ;
+  box-shadow: #515151 0 0 20px 10px;
+}
+
+.sprts{
+  background: url("grid3.jpg");
+  width: 40vw;
+  height: 40vh;
+  font-size: medium;
+  display: flex;
+  font-weight: 1000;
+  align-items: center;
+  justify-content: center;
+  filter: blur(0.5px) brightness(0.6) saturate(0.6) ;
+  box-shadow: #515151 0 0 20px 10px;
+}
+
+.archi{
+  background: url("grid4.jpg");
+  width: 20vw;
+  height: 40vh;display: flex;
+  align-items: center;
+  font-size: medium;
+  font-weight: 1000;
+  justify-content: center;
+  filter: blur(0.5px) brightness(0.6) saturate(0.6) ;
+  box-shadow: #515151 0 0 20px 10px;
+}
+
+.film{
+  background: url("grid5.jpg");
+  width: 40vw;
+  height: 40vh;
+  display: flex;
+  font-weight: 1000;
+  font-size: medium;
+  align-items: center;
+  justify-content: center;
+  filter: blur(0.5px) brightness(0.6) saturate(0.6) ;
+  box-shadow: #515151 0 0 20px 10px;
+}
+
+.uiux{
+  background: url("grid6.jpg");
+  width: 40vw;
+  height: 40vh;
+  font-weight: 1000;
+  display: flex;
+  font-size: medium;
+  align-items: center;
+  justify-content: center;
+  filter: blur(0.5px) brightness(0.6) saturate(0.6) ;
+  box-shadow: #515151 0 0 20px 10px;
+}
+.archi:hover{
+  filter: blur(0px) brightness(1.01) saturate(1);
+  transition: 0.3s ease;
+}
+.uiux:hover{
+  filter: blur(0px) brightness(1.01) saturate(1);
+  transition: 0.3s ease;
+}
+.film:hover{
+  filter: blur(0px) brightness(1.01) saturate(1);
+  transition: 0.3s ease;
+}
+.phtg:hover{
+  filter: blur(0px) brightness(1.01) saturate(1);
+  transition: 0.3s ease;
+}
+.sprts:hover{
+  filter: blur(0px) brightness(1.01) saturate(1);
+  transition: 0.3s ease;
+}
+.sktch:hover{
+  filter: blur(0px) brightness(1.01) saturate(1);
+  transition: 0.3s ease;
+}
+
+input{
+  background-color: #1c1c1c;
+  width: 40%;
+  font-size: 12px;
+  margin: 2rem 7rem;
+  padding: 16px 16px;
+  border-radius: 10px;
+  border-color: #282828;
+  margin-bottom: 20px;
+}
+
+button{
+  background-color: #c25026;
+  color: #d3b2a6;
+  text-align: center;
+  font-size: 12px;
+  margin: 2rem 7rem;
+  padding: 16px 16px;
+  border-radius: 10px;
+  border-color: #282828;  
+  cursor: pointer;
+}
