@@ -78,12 +78,14 @@ section{
 }
 
 .social{
-  min-height: 20px;
-  min-width: 25px;
-  gap: 61rem;
+  min-height: 2rem;
+  min-width: 2.2rem;
+  gap: 20rem;
   display:flex;
+  margin: 4rem;
   flex-direction: row;
-  margin: 7rem;
+  align-items: center;
+  justify-content: center;  
   filter: blur(0.5px) brightness(0.6) saturate(0.6) ;
 }
 
