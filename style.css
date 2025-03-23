@@ -66,6 +66,12 @@ nav a{
   
 }
 
+
+nav a{
+  display: block; 
+  font-size: 2rem;
+  margin: 3rem 0;
+}
 nav a:hover{
   color: #ff7f50;
   border-bottom: 2px solid #ff7f50;
@@ -140,7 +146,7 @@ span{
 }
 
 .typing-text{
-  font-size: 2rem;
+  font-size: 34px;
   font-weight: 600;
   min-width: 280px;
 }
@@ -154,22 +160,13 @@ span{
   content: 'Designer';
   color: #736d6d;
   animation: words 10s infinite;
+  border: left 3px solid #515151;
 }
 
-.typing-text span::after{
-  content: '';
-  background-color: transparent;
-  position: relative;
-  width: calc(100% + 8px);
-  height: 2rem;
-  border-left: 3px solid #353535;
-  right: -9;
-  animation: cursor 0.6s infinite;
-}
 
 @keyframes cursor{
   to{
-    border-left: 5rem solid #515151;
+    border-left: 3px solid #515151;
   }
 }
 
@@ -205,11 +202,6 @@ span{
   .home .home-content h3{
     font-size: 2.5rem;
   }
-
-  .typing-text span::after{
-    font-size: 2.5rem;
-  }
-
 
   .home-img img{
     width: 70vw;
@@ -347,8 +339,9 @@ img{
 
 input{
   background-color: #1c1c1c;
-  width: 40%;
+  width: auto;
   font-size: 12px;
+  font-weight: 700;
   margin: 2rem 7rem;
   padding: 16px 16px;
   border-radius: 10px;
@@ -361,7 +354,7 @@ button{
   color: #d3b2a6;
   text-align: center;
   font-size: 15px;
-  font-weight: 800;
+  font-weight: 900;
   margin: 2rem 7rem;
   padding: 16px 16px;
   border-radius: 10px;
