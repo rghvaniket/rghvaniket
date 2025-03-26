@@ -42,7 +42,7 @@ header {
 
 .logo{
   font-size:4rem;
-  color: #d3b2a6;
+  color: #ff7f50;
   font-weight: 800;
   cursor: pointer;
   transition: 0.5s ease;
@@ -96,21 +96,23 @@ section{
   flex-direction: row;
   align-items: center;
   justify-content: center;  
-  filter: brightness(0.8);
+  filter: contrast(0.84);
   transition:  0.3s ease;
 }
 
 .social a:hover{
-  filter: brightness(1.01);                           
+  fill: #d3b2a6;
+  scale: 1.2;                          
   
 }
 
 p{
-  font-size: 2.5rem;
-  line-height: 1.6;
+  font-size: 2.7rem;
+  line-height: 1.8;
   margin-top: 2rem;
   color: #d3b2a6;
 }
+
 
 .home{
   display: flex;
@@ -130,9 +132,10 @@ span{
   color: #ff7f50;
 }
 
+
 .home .home-content h3{
   font-size: 4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-weight: 700;
 }
 
@@ -144,9 +147,17 @@ span{
   transition: 0.2s ease;
 }
 
+.home-img h1{
+  font-size: 1.5rem;
+  color: #736d6d;
+}
+
+
 .home-img img:hover{
   font-size: 1.8rem;
   font-weight: 500;
+  scale: 1.02;
+  filter: sepia(1) brightness(1.1);
 }
 
 .typing-text{
@@ -166,6 +177,13 @@ span{
   animation: words 10s infinite;
   border: left 3px solid #515151;
 }
+
+.container h1{
+  color: #bc5631;
+   font-weight: 900;
+   font-size: 80px ; 
+}
+
 
 
 @keyframes cursor{
@@ -376,7 +394,6 @@ img{
 input{
   background-color: #1c1c1c;
   height: 7rem;
-  /* width: 100%; */
   font-size: 32px;
   font-weight: 700;
   margin: 2rem 7rem;
@@ -403,8 +420,24 @@ button{
   cursor: pointer;
 }
 
+
+.cnct{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cnct h1{
+  color: #bc5631;
+  margin-left: 7rem;
+  font-weight: 900;
+  font-size: 80px;
+}
+
 button:hover{
   background-color: #b8745b;
   color: #3c3b3a;
   transition: 0.1s ease;
+  scale: 1.01;
 }
